@@ -1,0 +1,6 @@
+
+-- Permiso para mandar un email--
+
+Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto","correo@gmail.com", null));
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Android APP - ");
+                startActivity(Intent.createChooser(emailIntent,  getActivity().getString(R.string.enviar_mail)));

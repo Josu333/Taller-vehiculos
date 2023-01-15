@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemVehiculo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+
+        <TextView
+            android:id="@+id/dni"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:text="12345678A"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/nombre"
+            style="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:text="Josue Esteban"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/dni"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/matri"
+            style="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/matri"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:text="0000ABC"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/nombre"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/modelo"
+            style="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/modelo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:text="Escort"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@id/matri"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            >
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
